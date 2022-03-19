@@ -25,6 +25,15 @@ dependencies {
 
   // This dependency is used by the application.
   implementation 'com.google.guava:guava:29.0-jre'
+
+  compileOnly 'org.projectlombok:lombok:1.18.22'
+  annotationProcessor 'org.projectlombok:lombok:1.18.22'
+
+  testCompileOnly 'org.projectlombok:lombok:1.18.22'
+  testAnnotationProcessor 'org.projectlombok:lombok:1.18.22'
+
+  // https://mvnrepository.com/artifact/org.assertj/assertj-core
+  testImplementation group: 'org.assertj', name: 'assertj-core', version: '3.22.0'
 }
 
 application {
